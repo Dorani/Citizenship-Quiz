@@ -3,3 +3,10 @@ function Quiz(questions){
   this.questions = questions;
   this.currentQuestionIndex = 0;
 }
+
+Quiz.prototype.guess = function(answer){
+  if(this.getCurrentQuestion().isCorrectanswer(answer)){
+    this.score++;
+  }
+  this.currentQuestionIndex++;
+};
