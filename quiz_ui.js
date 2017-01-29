@@ -1,5 +1,5 @@
 var QuizUI = {
-  displayNext: function(){
+  displayNext: function (){
     if (quiz.hasEnded()){
       this.displayScore();
     } else {
@@ -7,8 +7,8 @@ var QuizUI = {
       this.displayChoices();
       this.displayProgress();
     }
-  }
-},
+  },
+
     displayQuestion: function(){
       this.populateIdWithHTML("question", quiz.getCurrentQuestion().text);
     },

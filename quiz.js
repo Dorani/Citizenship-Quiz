@@ -6,7 +6,7 @@ function Quiz(questions){
 
 
 Quiz.prototype.guess = function(answer){
-  if(this.getCurrentQuestion().isCorrectanswer(answer)){
+  if(this.getCurrentQuestion().isCorrectAnswer(answer)){
     this.score++;
   }
   this.currentQuestionIndex++;
