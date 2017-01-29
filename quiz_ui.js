@@ -11,7 +11,7 @@ var QuizUI = {
 },
     displayQuestion: function(){
       this.populateIdWithHTML("question", quiz.getCurrentQuestion().text);
-    };
+    },
     displayChoices: function(){
       var choices = quiz.getCurrentQuestion.choices;
 
@@ -28,4 +28,18 @@ var QuizUI = {
 
     populateIdWithHTML: function(id, text){
       var element = document.getElementById(id);
+    },
+    guessHandler: function(id, guess){
+      var button = document.getElementById(id);
+      button.onclick = function(){
+        quiz.guess(guess);
+        QuizUI.displayNext();
+      }
+    },
+
+    displayProgress: function(){
+      var currentQuestionIndex = quiz.currentQuestionIndex + 1;
+      this.populateIdWithHTML("progress", "Question" + currentQuestionNumber + "of" + quiz.questions.length);
     }
+
+};
