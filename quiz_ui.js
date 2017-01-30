@@ -22,7 +22,7 @@ displayChoices: function() {
 
 displayScore: function() {
     var gameOverHTML = "<h1>Game Over</h1>";
-    gameOverHTML += "<h2> Your score is: " + quiz.score + "</h2>";
+    gameOverHTML += "<h2> Your score is: " + quiz.score  + "</h2>";
     this.populateIdWithHTML("quiz", gameOverHTML);
 },
 
