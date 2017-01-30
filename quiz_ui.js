@@ -40,6 +40,6 @@ guessHandler: function(id, guess) {
 
 displayProgress: function() {
     var currentQuestionNumber = quiz.currentQuestionIndex + 1;
-    this.populateIdWithHTML("progress", "Question" + currentQuestionNumber + " of " + quiz.questions.length);
+    this.populateIdWithHTML("progress", "Question " + currentQuestionNumber + " of " + quiz.questions.length);
     }
 };
