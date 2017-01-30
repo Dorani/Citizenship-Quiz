@@ -10,7 +10,8 @@ var questions = [
   new Question("We elect president for how many years?" , ["4", "2"], "4"),
   new Question("Why did the colonies fight the brits?" , ["they were bored", "taxes"], "taxes"),
   new Question("What is the supreme law of the land?" , ["constitution", "bible"], "constitution"),
-
+  new Question("How many senators?" , ["100", "4"], "100"),
+  new Question("What does the constitution do?" , ["raps?", "protects rights!"], "protects rights!")
 ];
 
 // Create Quiz
